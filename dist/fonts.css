@@ -1,0 +1,300 @@
+@font-face {
+    font-family: 'JanRothuizen';
+    src: url('/dist/theme/fonts/JanRothuizen2-Regular.ttf') format('truetype');
+    /* Additional font properties */
+}
+
+/* tekst introductie */
+p {
+    font-family: JanRothuizen;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: .5em;
+}
+
+
+.text-old {
+    color: rgb(156, 156, 156);
+    font-size: 1.5em;
+}
+
+.text-new {
+    color: black;
+}
+
+.tekst-wrapper {
+    width: 75%;
+}
+
+
+/* tekst introductie */
+.intro-text-container-invisible {
+    opacity: 0;
+}
+
+.intro-text-container-visible {
+    opacity: 1;
+}
+
+/* Image container important */
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Verticaal centreren */
+}
+
+.image-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Verticaal centreren */
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+#container {
+    width: fit-content;
+    height: fit-content;
+}
+
+#map {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.marker {
+    position: absolute;
+    background-color: white;
+}
+
+.marker[data-active] {
+    background-color: white;
+    opacity: 0;
+    transition: 2000ms opacity ease-in-out;
+}
+
+.marker[data-visible] {
+    border: 1px dotted red;
+}
+
+/* #aphrodite {
+    left: 570px;
+    top: 0;
+    width: 680px;
+    height: 1075px;
+}
+
+#aphrodite::after {
+    content: '';
+    position: absolute;
+    left: 50px;
+    top: 1059px;
+    width: 505px;
+    height: 178px;
+    background-color: white;
+}
+
+#aphrodite2 {
+    left: 1470px;
+    top: 700px;
+    width: 270px;
+    height: 170px;
+}
+
+#aphrodite2::after {
+    content: '';
+    position: absolute;
+    left: 267px;
+    top: 49px;
+    width: 65px;
+    height: 85px;
+    border-radius: 0 50px 50px 0;
+    background-color: white;
+}
+
+#beacon {
+    left: 670px;
+    top: 1260px;
+    width: 440px;
+    height: 400px;
+}
+
+#pandabear {
+    left: 60px;
+    top: 1350px;
+    width: 545px;
+    height: 760px;
+}
+
+#condorito {
+    width: 783px;
+    height: 295px;
+    left: 1760px;
+    top: 480px;
+    border-radius: 80px;
+}
+
+#condorito::before {
+    content: '';
+    position: absolute;
+    left: -259px;
+    top: -80px;
+    width: 730px;
+    height: 230px;
+    background-color: white;
+}
+
+#condorito::after {
+    content: '';
+    position: absolute;
+    left: 175px;
+    top: 211px;
+    width: 653px;
+    height: 331px;
+    background-color: white;
+}
+
+#decorators {
+    width: 530px;
+    height: 166px;
+    left: 800px;
+    top: 2363px;
+}
+
+#decorators::before {
+    content: '';
+    position: absolute;
+    left: -102px;
+    top: -292px;
+    width: 285px;
+    height: 300px;
+    background-color: white;
+}
+
+#decorators::after {
+    content: '';
+    position: absolute;
+    left: 45px;
+    top: 165px;
+    width: 590px;
+    height: 191px;
+    background-color: white;
+}
+
+#staff {
+    width: 585px;
+    height: 180px;
+    left: 2283px;
+    top: 180px;
+}
+
+#lovemotel {
+    width: 950px;
+    height: 324px;
+    left: 2900px;
+    top: 320px;
+}
+
+#message {
+    width: 640px;
+    height: 155px;
+    left: 2650px;
+    top: 720px;
+}
+
+#flamingo {
+    width: 440px;
+    height: 170px;
+    left: 2625px;
+    top: 900px;
+}
+
+#lovers {
+    width: 570px;
+    height: 345px;
+    left: 3555px;
+    top: 660px;
+}
+
+#lovers::before {
+    content: '';
+    position: absolute;
+    width: 233px;
+    height: 175px;
+    left: -224px;
+    top: 164px;
+    background-color: white;
+}
+
+#lovers::before {
+    width: 233px;
+    height: 175px;
+    left: -228px;
+    top: 172px;
+}
+
+#sign {
+    width: 400px;
+    height: 290px;
+    left: 3861px;
+    top: 1299px;
+}
+
+#disney {
+    width: 800px;
+    height: 290px;
+    left: 3599px;
+    top: 2277px;
+}
+
+#littleAprodite {
+    width: 295px;
+    height: 290px;
+    left: 4050px;
+    top: 1866px;
+}
+
+#unicorns {
+    width: 685px;
+    height: 290px;
+    left: 2360px;
+    top: 2370px;
+}
+
+#unicorns::after {
+    content: '';
+    position: absolute;
+    left: 204px;
+    top: 235px;
+    width: 700px;
+    height: 250px;
+    background-color: white;
+}
+
+#reception {
+    width: 700px;
+    height: 280px;
+    left: 1640px;
+    top: 2570px;
+}
+ .interactiveImage,  {
+    height: 320%;
+    object-fit: cover;
+    cursor: grab;
+} */
+
+/* videos */
+#intro {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+

@@ -100,5 +100,10 @@
       "no-eq-null": 2,
       "no-unused-expressions": 0
     }
+  },
+  "dependencies": {
+    "@panzoom/panzoom": "^4.5.1",
+    "@svgdotjs/svg.js": "^3.2.0",
+    "gsap": "^3.12.4"
   }
 }

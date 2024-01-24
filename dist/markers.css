@@ -1,0 +1,499 @@
+		body {
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			width: 100vw;
+			height: 100vh;
+		}
+
+		#containerMotel, .containerRoom {
+			width: fit-content;
+			height: fit-content;
+		}
+
+		#map {
+			position: relative;
+			width: 100%;
+			height: 100%;
+		}
+
+		.markerRoom, .markerMotel {
+			position: absolute;
+			background-color: white;
+		}
+
+		.markerRoom[data-active], .markerMotel[data-active] {
+			background-color: white;
+			opacity: 0;
+			transition: 2000ms opacity ease-in-out;
+		}
+
+		.markerMotel[data-visible], .markerMotel[data-visible] {
+			border: 1px dotted red;
+		}
+
+		#aphrodite {
+			left: 570px;
+			top: 0;
+			width: 680px;
+			height: 1075px;
+		}
+
+		#aphrodite::after {
+			content: '';
+			position: absolute;
+			left: 50px;
+			top: 1059px;
+			width: 505px;
+			height: 178px;
+			background-color: white;
+		}
+
+		#aphrodite2 {
+			left: 1470px;
+			top: 700px;
+			width: 270px;
+			height: 170px;
+		}
+
+		#aphrodite2::after {
+			content: '';
+			position: absolute;
+			left: 267px;
+			top: 49px;
+			width: 65px;
+			height: 85px;
+			border-radius: 0 50px 50px 0;
+			background-color: white;
+		}
+
+		#beacon {
+			left: 670px;
+			top: 1260px;
+			width: 440px;
+			height: 400px;
+		}
+
+		#pandabear {
+			left: 60px;
+			top: 1350px;
+			width: 545px;
+			height: 760px;
+		}
+
+		#condorito {
+			width: 783px;
+			height: 295px;
+			left: 1760px;
+			top: 480px;
+			border-radius: 80px;
+		}
+
+		#condorito::before {
+			content: '';
+			position: absolute;
+			left: -259px;
+			top: -80px;
+			width: 730px;
+			height: 230px;
+			background-color: white;
+		}
+
+		#condorito::after {
+			content: '';
+			position: absolute;
+			left: 175px;
+			top: 211px;
+			width: 653px;
+			height: 331px;
+			background-color: white;
+		}
+
+		#decorators {
+			width: 530px;
+			height: 166px;
+			left: 800px;
+			top: 2363px;
+		}
+
+		#decorators::before {
+			content: '';
+			position: absolute;
+			left: -102px;
+			top: -292px;
+			width: 285px;
+			height: 300px;
+			background-color: white;
+		}
+
+		#decorators::after {
+			content: '';
+			position: absolute;
+			left: 45px;
+			top: 165px;
+			width: 590px;
+			height: 191px;
+			background-color: white;
+		}
+
+		#staff {
+			width: 585px;
+			height: 180px;
+			left: 2283px;
+			top: 180px;
+		}
+
+		#lovemotel {
+			width: 950px;
+			height: 324px;
+			left: 2900px;
+			top: 320px;
+		}
+
+		#message {
+			width: 640px;
+			height: 155px;
+			left: 2650px;
+			top: 720px;
+		}
+
+		#flamingo {
+			width: 440px;
+			height: 170px;
+			left: 2625px;
+			top: 900px;
+		}
+
+		#lovers {
+			width: 570px;
+			height: 345px;
+			left: 3555px;
+			top: 660px;
+		}
+
+		#lovers::before {
+			content: '';
+			position: absolute;
+			width: 233px;
+			height: 175px;
+			left: -224px;
+			top: 164px;
+			background-color: white;
+		}
+
+		#lovers::before {
+			width: 233px;
+			height: 175px;
+			left: -228px;
+			top: 172px;
+		}
+
+		#sign {
+			width: 400px;
+			height: 290px;
+			left: 3861px;
+			top: 1299px;
+		}
+
+		#disney {
+			width: 800px;
+			height: 290px;
+			left: 3599px;
+			top: 2277px;
+		}
+
+		#littleAprodite {
+			width: 295px;
+			height: 290px;
+			left: 4050px;
+			top: 1866px;
+		}
+
+		#unicorns {
+			width: 685px;
+			height: 290px;
+			left: 2360px;
+			top: 2370px;
+		}
+
+		#unicorns::after {
+			content: '';
+			position: absolute;
+			left: 204px;
+			top: 235px;
+			width: 700px;
+			height: 250px;
+			background-color: white;
+		}
+
+		#reception {
+			width: 700px;
+			height: 280px;
+			left: 1640px;
+			top: 2570px;
+		}
+
+		/* Markers in tornado kamer */
+		#haaievin {
+			width: 450px;
+			height: 465px;
+			left: 0px;
+			top: 1830px;
+		}
+
+		#zitje {
+			width: 600px;
+			height: 150px;
+			left: 1820px;
+			top: 3440px;
+		}
+
+		#slot {
+			width: 210px;
+			height: 150px;
+			left: 2773px;
+			top: 1471px;
+		}
+
+		#luik {
+			width: 315px;
+			height: 250px;
+			left: 2668px;
+			top: 1656px;
+		}
+
+		#deur {
+			width: 210px;
+			height: 150px;
+			left: 2773px;
+			top: 2237px;
+		}
+
+		#luik {
+			width: 315px;
+			height: 250px;
+			left: 2668px;
+			top: 1656px;
+		}
+
+		#roomservice {
+			width: 463px;
+			height: 262px;
+			left: 3144px;
+			top: 2333px;
+		}
+
+		#roomservice::after {
+			content: '';
+			position: absolute;
+			left: -323px;
+			top: 257px;
+			width: 242px;
+			height: 230px;
+			background-color: white;
+		}
+
+		#roulette {
+			width: 605px;
+			height: 260px;
+			left: 4472px;
+			top: 842px;
+		}
+
+		#roulette::after {
+			content: '';
+			position: absolute;
+			left: 123px;
+			top: 204px;
+			width: 410px;
+			height: 160px;
+			background-color: white;
+		}
+
+		#rad {
+			width: 130px;
+			height: 120px;
+			left: 4955px;
+			top: 1710px;
+		}
+
+		#airco {
+			width: 190px;
+			height: 160px;
+			left: 5200px;
+			top: 990px;
+		}
+
+		#radio {
+			width: 420px;
+			height: 175px;
+			left: 5020px;
+			top: 1980px;
+		}
+
+		#condooms {
+			width: 345px;
+			height: 175px;
+			left: 4980px;
+			top: 2395px;
+		}
+
+		#plafond {
+			width: 445px;
+			height: 200px;
+			left: 6048px;
+			top: 1087px;
+		}
+
+		#plafond::after {
+			content: '';
+			position: absolute;
+			left: 121px;
+			top: -58px;
+			width: 120px;
+			height: 75px;
+			background-color: white;
+		}
+
+		#plafond::before {
+			content: '';
+			position: absolute;
+			left: 25px;
+			top: 194px;
+			width: 384px;
+			height: 66px;
+			background-color: white;
+		}
+
+		/* video overlay */
+		#telefoon {
+			position: absolute;
+			top: 1701px;
+			left: 3675px;
+			width: 129px;
+			height: 253px;
+			border-radius: 25px;
+			background-color: transparent;
+		}
+
+		.telefoon {
+			position: absolute;
+			top: -5px;
+			left: -2px;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			z-index: -10;
+		}
+
+		.telefoon.active {
+			position: absolute;
+			top: -5px;
+			left: -2px;
+			width: 100%;
+			height: 100%;
+			opacity: 1;
+			z-index: 10;
+			transition: 0.5s ease;
+		}
+
+		/* glowing lights effect */
+		.glowing-light {
+			opacity: 1;
+			position: absolute;
+			top: 1504px;
+			left: 2192px;
+			z-index: 2;
+			opacity: 0;
+			width: 245px;
+			height: 125px;
+		}
+
+		.glowing-light.active {
+			animation: glow 1s ease-in-out infinite alternate;
+			opacity: 1;
+			z-index: 0;
+			pointer-events: none;
+		}
+
+
+		@keyframes glow {
+			from {
+				opacity: 0.2;
+			}
+
+			to {
+				opacity: 1;
+			}
+		}
+
+		/* svg attribute */
+		.glowing-light.active[svg-active] {
+			animation: none;
+			/* position: sticky; */
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			fill-opacity: 1;
+			fill: #FFD600;
+			transition: 1000ms cubic-bezier(0.41, 0.31, 0.97, 0.32);
+		}
+
+		.glowing-light.active[svg-active]>path {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			width: 100vw;
+			height: 100vh;
+			fill-opacity: 1;
+			fill: #FFD600;
+		}
+
+		.glowing-light[svg-active]>path {
+			position: absolute;
+			top: 100%;
+			left: 100%;
+			/* Andere stijlen */
+		}
+
+		/* radio input */
+		.radio {
+			position: absolute;
+			top: 1991px;
+			left: 4659px;
+			width: 303px;
+			height: 202px;
+			border-radius: 25px;
+			background-color: transparent;
+			z-index: 2;
+		}
+
+		/* klop */
+		.klop {
+			position: absolute;
+			top: 17%;
+			left: 29%;
+			z-index: -10;
+		}
+
+		/* deken */
+		.deken {
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 120px;
+			z-index: 1;
+		}
+
+		.end-trigger.active {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(255, 255, 255, 0.482);
+		}
